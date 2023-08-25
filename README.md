@@ -8,6 +8,8 @@
 
 Testflow aspires to become the simplest Web automated testing platform. It can help front-end engineers and test engineers record behavior operations, and share test behavior through team accounts, facilitating any member of the team to quickly and conveniently return to automated testing
 
+![](/testflowy.gif)
+
 ## Testflow compared with traditional manual writing (integration) test
 
 For manually writing integration test code, there are always the following difficulties

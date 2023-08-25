@@ -2,9 +2,9 @@ name: testflowy_release
 
 on:
   push:
-    branches: [release/testflowy]
+    branches: [main]
   pull_request:
-    branches: [release/testflowy]
+    branches: [main]
 
 env:
   CARGO_TERM_COLOR: always

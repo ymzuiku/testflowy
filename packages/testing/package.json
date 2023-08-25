@@ -1,0 +1,20 @@
+{
+  "name": "testing",
+  "version": "0.0.1",
+  "main": "lib/index.ts",
+  "types": "lib/index.ts",
+  "private": true,
+  "description": "e2e测试",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymzuiku/gewu-packages.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/ymzuiku/gewu-packages.git"
+  },
+  "homepage": "git+https://github.com/ymzuiku/gewu-packages.git",
+  "dependencies": {
+    "@testing-library/dom": "^8.19.0",
+    "@testing-library/user-event": "^14.4.3"
+  }
+}

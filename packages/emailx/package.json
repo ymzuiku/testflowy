@@ -1,0 +1,15 @@
+{
+  "name": "emailx",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "private": true,
+  "dependencies": {
+    "@types/nodemailer": "^6.4.6",
+    "nodemailer": "^6.8.0",
+    "up-dir-env": "^0.0.6"
+  },
+  "devDependencies": {
+    "zod-dx": "workspace:*"
+  }
+}

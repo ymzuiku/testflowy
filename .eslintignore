@@ -1,0 +1,19 @@
+*.js
+*.css
+**/vite.config.ts
+**/vite.server.ts
+**/vitest.config.ts
+**/vitest.setup.ts
+**/cypress
+**/constant/lang.ts
+**/glove-blog
+config/**
+# 忽略自动生成的文件
+**/i18n/index.ts
+**/i18n/serveLang.ts
+**/node_modules/
+**/dist/
+**/dist-ser/
+**/routers/_apis.ts
+**/routers/_serves.ts
+**/routers/_pages.ts

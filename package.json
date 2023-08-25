@@ -1,0 +1,62 @@
+{
+  "name": "testflowy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "update:all": "pnpm -r --stream update --latest",
+    "dev:all": "pnpm -r --stream dev",
+    "i18n:all": "pnpm -r --stream i18n",
+    "dev": "pnpm -C app dev",
+    "build": "pnpm -C app build",
+    "build:sdk": "pnpm -C app build:sdk",
+    "lib": "pnpm -C app lib",
+    "i18n": "pnpm -C app i18n",
+    "clear": "pnpm store prune && node-modules-rm node-modules",
+    "test:run": "pnpm -r --stream test:run",
+    "test": "pnpm -C app test",
+    "test:pkg": "pnpm -C packages test",
+    "test-ui": "vitest --ui",
+    "types": "tsc --noemit --skipLibCheck --incremental --tsBuildInfoFile './node_modules/.tsbuildinfo'",
+    "lint": "eslint --cache --fix **/*.{tsx,ts}",
+    "prepare": "husky install",
+    "format": "prettier  --write --loglevel=warn \"**/*.{ts,tsx,md}\"",
+    "ts": "npm run format && git add . && npm run types && npm run lint",
+    "tsw": "tsc-watch --noemit --skipLibCheck --incremental --tsBuildInfoFile './node_modules/.tsbuildinfo'",
+    "check": "npm run ts && npm run test:run"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^8.19.0",
+    "axios": "^1.2.0",
+    "bike": "^1.0.9",
+    "husky": "^8.0.2",
+    "link": "^1.5.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.8.0",
+    "solid-js": "^1.6.2",
+    "tslib": "^2.4.1",
+    "vitest": "^0.25.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "@vitest/ui": "^0.25.3",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "happy-dom": "^7.7.0",
+    "prettier": "^2.7.1",
+    "terser": "^5.16.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.9.3",
+    "vite": "^3.2.4"
+  },
+  "lint-staged": {
+    "./**/*": "prettier --write --ignore-unknown",
+    "./**/*.{tsx,ts}": "eslint --cache --fix"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@6.32.4"
+}

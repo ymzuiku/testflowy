@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div id="title">other</div>
+      <input placeholder="input other" />
+      <button onclick="changeOther()">the button</button>
+    </div>
+    <script>
+      (function (d) {
+        var s = d.createElement("script");
+        s.async = true;
+        s.src = "http://127.0.0.1:6011/sdk.js?t=" + ~~(Date.now() / 21600000);
+        s.onload = function () {
+          gloveSDK({ id: "123", title: "Word Testing", bottom: "100px" });
+        };
+        if (d.head) d.head.appendChild(s);
+      })(document);
+    </script>
+  </body>
+</html>

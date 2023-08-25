@@ -1,0 +1,87 @@
+:root {
+  /* text */
+  --text-def: 0, 0%, 0%;
+  --text-weak: 0, 0%, 75%;
+  --text-info: 0, 0%, 60%;
+  --text-deep: 0, 0%, 0%;
+  --text-primary: 250, 50%, 50%;
+  --text-secondary: 140, 50%, 50%;
+  --text-success: 140, 50%, 50%;
+  --text-danger: 0, 50%, 50%;
+  --text-warn: 80, 50%, 80%;
+  /* bg */
+  --bg-def: 0, 0%, 100%;
+  --bg-weak: 0, 0%, 95%;
+  --bg-info: 0, 0%, 97%;
+  --bg-deep: 0, 0%, 0%;
+  --bg-primary: 250, 50%, 50%;
+  --bg-secondary: 140, 50%, 50%;
+  --bg-success: 140, 50%, 50%;
+  --bg-danger: 0, 50%, 50%;
+  --bg-warn: 80, 50%, 80%;
+  /*  front */
+  --front-def: 0, 0%, 0%;
+  --front-weak: 0, 0%, 0%;
+  --front-info: 0, 0%, 40%;
+  --front-deep: 0, 0%, 100%;
+  --front-primary: 0, 0%, 100%;
+  --front-secondary: 0, 0%, 100%;
+  --front-success: 0, 0%, 100%;
+  --front-danger: 0, 0%, 100%;
+  --front-warn: 0, 0%, 0%;
+  /*  border */
+  --border-def: 0, 0%, 90%;
+  --border-weak: 0, 0%, 95%;
+  --border-info: 0, 0%, 88%;
+  --border-deep: 0, 0%, 10%;
+  --border-primary: 250, 50%, 50%;
+  --border-secondary: 140, 60%, 47%;
+  --border-success: 140, 50%, 40%;
+  --border-danger: 0, 50%, 40%;
+  --border-warn: 80, 50%, 70%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*  text */
+    --text-def: 0, 0%, 90%;
+    --text-weak: 0, 0%, 65%;
+    --text-info: 0, 0%, 45%;
+    --text-deep: 0, 0%, 100%;
+    --text-primary: 218, 83%, 54%;
+    --text-secondary: 140, 50%, 50%;
+    --text-success: 140, 50%, 50%;
+    --text-danger: 0, 50%, 50%;
+    --text-warn: 80, 50%, 80%;
+    /*  bg */
+    --bg-def: 224, 14%, 16%;
+    --bg-weak: 224, 16%, 14%;
+    --bg-info: 224, 16%, 14%;
+    --bg-deep: 0, 0%, 0%;
+    --bg-primary: 218, 83%, 54%;
+    --bg-secondary: 140, 50%, 50%;
+    --bg-success: 140, 50%, 50%;
+    --bg-danger: 0, 50%, 50%;
+    --bg-warn: 80, 50%, 50%;
+    /* front */
+    --front-def: 0, 0%, 70%;
+    --front-weak: 0, 0%, 70%;
+    --front-info: 0, 0%, 70%;
+    --front-deep: 0, 0%, 10%;
+    --front-primary: 0, 0%, 100%;
+    --front-secondary: 0, 0%, 100%;
+    --front-success: 0, 0%, 100%;
+    --front-danger: 0, 0%, 100%;
+    --front-warn: 0, 0%, 100%;
+    /* border */
+    --border-def: 220, 10%, 21%;
+    --border-weak: 223, 11%, 25%;
+    --border-info: 224, 16%, 24%;
+    --border-deep: 0, 0%, 60%;
+    --border-primary: 218, 83%, 61%;
+    --border-secondary: 140, 83%, 55%;
+    --border-success: 140, 50%, 40%;
+    --border-danger: 0, 50%, 62%;
+    --border-warn: 80, 50%, 60%;
+  }
+}

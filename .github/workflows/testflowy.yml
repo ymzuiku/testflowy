@@ -1,0 +1,56 @@
+name: testflowy_release
+
+on:
+  push:
+    branches: [release/testflowy]
+  pull_request:
+    branches: [release/testflowy]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  deploy_client:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+      - name: build
+        run: |
+          pnpm build
+      - name: deploy
+        run: |
+          touch deploy_key
+          echo "${{secrets.GG_SSH_PRIVATE_KEY}}" > deploy_key
+          chmod 600 ./deploy_key
+          rsync -av  -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' ./app/dist/* ${{ secrets.GG_SSH_URL }}:~/static/testflowy/
+          rsync -av  -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' ./app/dist-ser/* ${{ secrets.GG_SSH_URL }}:~/server/testflowy/

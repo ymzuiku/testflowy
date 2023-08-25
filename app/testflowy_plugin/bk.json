@@ -1,0 +1,52 @@
+{
+  "name": "Testflowy - Web auto testing",
+  "description": "Zero code auto testing",
+  "version": "1.0.2",
+  "manifest_version": 2,
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "css": [
+        "./styles.css"
+      ],
+      "js": [
+        "./js/content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "./index.html",
+    "default_icon": {
+      "16": "./logo/logo16.png",
+      "32": "./logo/logo32.png",
+      "48": "./logo/logo48.png",
+      "128": "./logo/logo128.png"
+    }
+  },
+  "icons": {
+    "16": "./logo/logo16.png",
+    "32": "./logo/logo32.png",
+    "48": "./logo/logo48.png",
+    "128": "./logo/logo128.png"
+  }
+}

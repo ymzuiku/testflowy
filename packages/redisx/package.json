@@ -1,0 +1,11 @@
+{
+  "name": "redisx",
+  "version": "0.0.0",
+  "main": "./lib/index.ts",
+  "types": "./lib/index.ts",
+  "private": true,
+  "dependencies": {
+    "redis": "^4.5.0",
+    "up-dir-env": "^0.0.6"
+  }
+}

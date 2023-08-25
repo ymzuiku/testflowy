@@ -1,0 +1,32 @@
+{
+  "name": "solid-ux",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "types": "index.ts",
+  "private": false,
+  "description": "solid utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymzuiku/solid-ux.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/ymzuiku/solid-ux.git"
+  },
+  "homepage": "git+https://github.com/ymzuiku/solid-ux.git",
+  "dependencies": {
+    "@cn-ui/highlight": "^2.2.0",
+    "@cn-ui/use": "^2.0.1",
+    "@solid-primitives/event-props": "^0.2.2",
+    "@solid-primitives/media": "^2.0.4",
+    "dayjs": "^1.11.6",
+    "highlight.js": "^11.7.0",
+    "i18n-less-translate": "^0.1.15",
+    "qrcode": "^1.5.1",
+    "solid-icons": "^1.0.4",
+    "solid-js": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/qrcode": "^1.5.0"
+  }
+}

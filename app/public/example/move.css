@@ -1,0 +1,22 @@
+.list-item.moving {
+  background: transparent;
+  color: transparent;
+  border: 1px dashed #ccc !important;
+}
+
+.list-item {
+  border: 1px dashed transparent;
+  background: #55a;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  font-size: 24px;
+}
+
+.list {
+  transition: all 0.2s ease-out;
+  padding: 20px;
+}

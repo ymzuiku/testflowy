@@ -1,0 +1,22 @@
+{
+  "name": "pgx",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./lib/index.ts",
+  "types": "./lib/index.ts",
+  "scripts": {
+    "build": "bike lib/index.ts ./cjs/index.js"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.1",
+    "pg": "^8.8.0",
+    "redisx": "workspace:*",
+    "up-dir-env": "^0.0.6",
+    "utils": "workspace:*",
+    "uuid": "^9.0.0",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.5"
+  }
+}

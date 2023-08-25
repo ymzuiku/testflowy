@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#fff" />
+    <link rel="shortcut icon" type="image/svg" href="/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>Testflowy</title>
+    <meta name="description" content="Testflowy Testing, Automatically test Web applications without writing code" />
+    <meta
+      name="keywords"
+      content="Testflowy, Testflowy.com, Testflowy testing,Web Automated Testing, Web UI Testing, React Testing, Website Testing, Automated Testing, Automated UI Testing, Automated React Testing"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX5L2LMLZY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VX5L2LMLZY");
+    </script>
+  </head>
+
+  <body>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div id="root" style="opacity: 0">
+      <div
+        data-path="/welcome"
+        class="solid-router-stack-now"
+        style="
+          pointer-events: auto;
+          position: fixed;
+          z-index: 0;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          background: var(--ux-gray-50);
+          color: var(--ux-gray-900);
+          overflow: hidden auto;
+        "
+      >
+        <div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              max-width: var(--ux-screen-2xl);
+              margin: 0px auto;
+              padding: 2.5em;
+            "
+          >
+            <div style="width: 4em; height: 4em; color: var(--ux-gray-900)"></div>
+            <h1
+              style="
+                margin: 0px 0px 0px 0.5em;
+                color: var(--ux-gray-900);
+                font-family: var(--ux-mono);
+                font-size: var(--ux-text-4xl);
+                display: block;
+              "
+            >
+              Testflowy
+            </h1>
+            <div style="flex: 1 1 0%"></div>
+            <div
+              style="display: flex; flex-direction: row; align-items: center; font-size: var(--ux-text-lg); gap: 2.5em"
+            >
+              <label
+                style="
+                  position: relative;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  cursor: pointer;
+                  box-sizing: border-box;
+                  opacity: 1;
+                  background-color: transparent;
+                  color: var(--ux-gray-900);
+                  font-size: var(--ux-text-lg);
+                "
+                >English<select
+                  style="
+                    background: transparent;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    outline: none;
+                    appearance: none;
+                    opacity: 0;
+                  "
+                >
+                  <option value="en">English</option>
+                  <option value="zh">简体中文</option>
+                  <option value="cht">繁体中文</option>
+                  <option value="kor">한국인</option>
+                  <option value="fra">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="jp">日本</option>
+                  <option value="spa">Española</option>
+                  <option value="ru">русский</option>
+                  <option value="it">Italia</option>
+                </select>
+                <div style="width: 1.25em; height: 1.25em; margin-left: 0.25em"></div> </label
+              ><a rel="/welcome/price" style="cursor: pointer; font-size: var(--ux-text-lg); display: block">Price</a
+              ><a rel="/welcome/doc" style="cursor: pointer; font-size: var(--ux-text-lg); display: block">Documents</a
+              ><a rel="/welcome/doc" style="cursor: pointer; font-size: var(--ux-text-lg); display: block">Examples</a>
+              <div
+                style="
+                  border: none;
+                  padding: 0px 1em;
+                  height: 3.5em;
+                  font-size: inherit;
+                  border-radius: 0.25em;
+                  box-sizing: border-box;
+                  cursor: pointer;
+                  outline: none;
+                  background: var(--ux-primary-400);
+                  color: var(--ux-white);
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <span style="margin: 0px 0.75em 0px 0px; width: 1.5em; height: 1.5em; pointer-events: none"></span
+                ><span>Login</span>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 1.5em;
+              flex-direction: row;
+              margin: 4em 0px 0px;
+            "
+          >
+            <div style="z-index: 10; width: 600px; padding: 3em">
+              <div style="font-weight: bold; font-size: var(--ux-text-6xl)">Zero code automatic test platform</div>
+              <div style="font-size: var(--ux-text-2xl); margin-top: 1.5em">
+                Provide enterprises with zero code automatic testing and team cooperation testing to improve system
+                correctness and user transformation
+              </div>
+              <form
+                style="
+                  display: flex;
+                  gap: 0.75em;
+                  margin: 2.5em auto 0px;
+                  width: 100%;
+                  flex-direction: row;
+                  max-width: var(--ux-screen-sm);
+                "
+              >
+                <label
+                  style="
+                    box-sizing: border-box;
+                    flex: 1 1 0%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: var(--ux-gray-900);
+                    opacity: 1;
+                    background: var(--ux-gray-50);
+                    padding: 1em;
+                    height: 3.5em;
+                    font-size: inherit;
+                    border-radius: 0.25em;
+                    appearance: none;
+                    border: 1px solid var(--ux-gray-300);
+                  "
+                  ><input
+                    type="email"
+                    placeholder="E-Mail address "
+                    style="
+                      appearance: none;
+                      width: 100%;
+                      height: 100%;
+                      margin: 0px;
+                      padding: 0px;
+                      border: none;
+                      outline: none;
+                      box-sizing: border-box;
+                      color: var(--ux-gray-900);
+                      background-color: transparent;
+                      font-size: var(--ux-text-md);
+                      text-align: left;
+                    " /></label
+                ><button
+                  style="
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    border: none;
+                    padding: 0px 1em;
+                    height: 3.5em;
+                    border-radius: 0.25em;
+                    cursor: pointer;
+                    outline: none;
+                    background: var(--ux-primary-400);
+                    color: var(--ux-white);
+                    flex: 0 0 auto;
+                    max-width: 170px;
+                    min-width: 160px;
+                  "
+                >
+                  Register
+                </button>
+              </form>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  font-size: var(--ux-text-base);
+                  gap: 0.5em;
+                  margin: 0.75em auto 0px;
+                  max-width: var(--ux-screen-sm);
+                "
+              >
+                <span style="padding-right: 0.5em">Individual permanent free</span
+                ><span style="padding-right: 0.5em">Simple setup</span
+                ><span style="padding-right: 0.5em">No credit card required</span>
+              </div>
+              <div style="flex-direction: column; gap: 1.5em; margin-top: 2.5em; display: none">
+                <button
+                  style="
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    border: 1px solid var(--ux-primary-500);
+                    padding: 0px 1em;
+                    height: 3.5em;
+                    border-radius: 0.25em;
+                    cursor: pointer;
+                    outline: none;
+                    background: transparent;
+                    color: var(--ux-primary-500);
+                  "
+                >
+                  Documents</button
+                ><button
+                  style="
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    border: 1px solid var(--ux-primary-500);
+                    padding: 0px 1em;
+                    height: 3.5em;
+                    border-radius: 0.25em;
+                    cursor: pointer;
+                    outline: none;
+                    background: transparent;
+                    color: var(--ux-primary-500);
+                  "
+                >
+                  Price
+                </button>
+              </div>
+            </div>
+            <img
+              src="/imgs/open-doodles/MeditatingDoodle.svg"
+              style="pointer-events: none; padding: 2.5em; height: 400px; transform: scale(1.6) translateX(2.5em)"
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: var(--ux-text-xl);
+              max-width: var(--ux-screen-2xl);
+              margin: 8em auto 1em;
+              padding: 1em;
+            "
+          >
+            <h2
+              style="
+                margin: 0px;
+                font-weight: bold;
+                max-width: var(--ux-screen-lg);
+                text-align: center;
+                font-size: var(--ux-text-5xl);
+              "
+            >
+              Automatic testing, one line code access, improving product quality
+            </h2>
+            <h3 style="font-size: var(--ux-text-2xl); margin: 2.5em 0px; text-align: center">
+              Add the automatic test function to your website to check the complete function of enterprise products at
+              any time
+            </h3>
+            <div style="font-size: var(--ux-text-xl); color: var(--ux-gray-400); margin: 0px 0px 1em">
+              Click the play button below to experience
+            </div>
+            <iframe
+              src="/example/index.html"
+              style="
+                border: 1px solid var(--ux-gray-300);
+                border-radius: var(--ux-radius-xl);
+                box-shadow: var(--ux-shadow-lg);
+                height: 850px;
+                width: 800px;
+              "
+            ></iframe>
+          </div>
+          <div
+            style="
+              width: 100%;
+              padding: 0px;
+              margin: 0px;
+              overflow: hidden;
+              color: var(--ux-indigo-200);
+              display: block;
+            "
+          >
+            <div
+              style="
+                color: currentcolor;
+                width: 100%;
+                transform: scale(1.1);
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: none;
+              "
+            ></div>
+          </div>
+          <div style="background: var(--ux-indigo-200); padding: 2.5em 0px">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                flex-direction: row;
+                padding: 2.5em;
+              "
+            >
+              <img
+                src="/imgs/pb1.png"
+                style="
+                  background: var(--ux-gray-50);
+                  border-radius: var(--ux-radius-xl);
+                  box-shadow: var(--ux-shadow-xl);
+                  width: 500px;
+                "
+              />
+              <div style="width: 400px; padding: 2.5em">
+                <h2 style="font-weight: bold; font-size: var(--ux-text-4xl)">Move the mouse to complete the test</h2>
+                <h3 style="font-size: var(--ux-text-2xl); margin: 2.5em 0px 0px">
+                  With Testflowy embedded in the test environment, you can directly record and play tests interactively
+                  on your system page
+                </h3>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                flex-direction: row-reverse;
+                padding: 2.5em;
+              "
+            >
+              <img
+                src="/imgs/pb2.png"
+                style="
+                  background: var(--ux-gray-50);
+                  border-radius: var(--ux-radius-xl);
+                  box-shadow: var(--ux-shadow-xl);
+                  width: 800px;
+                "
+              />
+              <div style="width: 400px; padding: 2.5em">
+                <h2 style="font-weight: bold; font-size: var(--ux-text-4xl)">Full use case regression</h2>
+                <h3 style="font-size: var(--ux-text-2xl); margin: 2.5em 0px 0px">
+                  One click regression of all test cases, and each release is more confident
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 100%;
+              padding: 0px;
+              margin: 0px;
+              overflow: hidden;
+              color: var(--ux-indigo-200);
+              display: block;
+            "
+          >
+            <div
+              style="
+                color: currentcolor;
+                width: 100%;
+                transform: scale(1.1);
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: none;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              max-width: var(--ux-screen-xl);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 0px auto;
+              flex-direction: row;
+              padding: 6em;
+              gap: 0px;
+            "
+          >
+            <div style="width: 24em; gap: 0.75em">
+              <h3 style="font-size: var(--ux-text-3xl); font-weight: 900">Automated testing</h3>
+              <div style="font-size: var(--ux-text-lg)">
+                Use Testflowy to record tests, research and develop faster. We will help you reduce product
+                vulnerabilities, improve and shorten the development cycle, and reduce the cost of coding and learning
+                for automated testing
+              </div>
+            </div>
+            <div style="width: 24em; gap: 0.75em">
+              <h3 style="font-size: var(--ux-text-3xl); font-weight: 900">Team collaborative testing</h3>
+              <div style="font-size: var(--ux-text-lg)">
+                Through the team collaboration function, you can easily let team members reuse automated tests, thereby
+                enabling your enterprise's R&amp;D efficiency; Team authority management to prevent negative factors of
+                test assets caused by staff turnover
+              </div>
+            </div>
+            <div style="width: 24em; gap: 0.75em">
+              <h3 style="font-size: var(--ux-text-3xl); font-weight: 900">Local key encryption</h3>
+              <div style="font-size: var(--ux-text-lg)">
+                You can choose to encrypt the use case. Only your own local secret key can know the content of the use
+                case. The Testflowy platform cannot know the specific content of your test case
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 100%;
+              padding: 0px;
+              margin: 0px auto;
+              overflow: hidden;
+              color: var(--ux-gray-100);
+              display: block;
+            "
+          >
+            <div
+              style="
+                color: currentcolor;
+                width: 100%;
+                transform: scale(1.1);
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: none;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 100%;
+              margin: 0px auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: var(--ux-gray-100);
+              flex-direction: row;
+              padding: 2em 0px 0px;
+            "
+          >
+            <div style="padding: 1em 1em 0px; z-index: 10; width: 640px">
+              <div
+                style="
+                  font-size: var(--ux-text-4xl);
+                  font-weight: bold;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                "
+              >
+                <div style="width: 2em; height: 2em; margin-right: 0.5em"></div>
+                <div style="font-size: var(--ux-text-xl)">Try Testflowy now</div>
+              </div>
+              <h3 style="font-size: var(--ux-text-lg)">Automated testing and guidance tools built for enterprises.</h3>
+              <form
+                style="
+                  display: flex;
+                  gap: 0.75em;
+                  margin: 2.5em auto 0px;
+                  width: 100%;
+                  flex-direction: row;
+                  max-width: var(--ux-screen-sm);
+                "
+              >
+                <label
+                  style="
+                    box-sizing: border-box;
+                    flex: 1 1 0%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: var(--ux-gray-900);
+                    opacity: 1;
+                    background: var(--ux-gray-50);
+                    padding: 1em;
+                    height: 3.5em;
+                    font-size: inherit;
+                    border-radius: 0.25em;
+                    appearance: none;
+                    border: 1px solid var(--ux-gray-300);
+                  "
+                  ><input
+                    type="email"
+                    placeholder="E-Mail address "
+                    style="
+                      appearance: none;
+                      width: 100%;
+                      height: 100%;
+                      margin: 0px;
+                      padding: 0px;
+                      border: none;
+                      outline: none;
+                      box-sizing: border-box;
+                      color: var(--ux-gray-900);
+                      background-color: transparent;
+                      font-size: var(--ux-text-md);
+                      text-align: left;
+                    " /></label
+                ><button
+                  style="
+                    box-sizing: border-box;
+                    font-size: inherit;
+                    border: none;
+                    padding: 0px 1em;
+                    height: 3.5em;
+                    border-radius: 0.25em;
+                    cursor: pointer;
+                    outline: none;
+                    background: var(--ux-primary-400);
+                    color: var(--ux-white);
+                    flex: 0 0 auto;
+                    max-width: 170px;
+                    min-width: 160px;
+                  "
+                >
+                  Register
+                </button>
+              </form>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  font-size: var(--ux-text-base);
+                  gap: 0.5em;
+                  margin: 0.75em auto 0px;
+                  max-width: var(--ux-screen-sm);
+                "
+              >
+                <span style="padding-right: 0.5em">Individual permanent free</span
+                ><span style="padding-right: 0.5em">Simple setup</span
+                ><span style="padding-right: 0.5em">No credit card required</span>
+              </div>
+            </div>
+            <img
+              alt="cooler2.webp"
+              src="/imgs/open-doodles/LovingDoodle.svg"
+              style="pointer-events: none; transform: scale(1.6) translateY(2.5em); height: 400px"
+            />
+          </div>
+          <div
+            style="
+              width: 100%;
+              padding: 0px;
+              margin: 0px auto;
+              overflow: hidden;
+              color: var(--ux-black);
+              background: var(--ux-gray-100);
+              display: block;
+            "
+          >
+            <div
+              style="
+                color: currentcolor;
+                width: 100%;
+                transform: scale(1.1);
+                vertical-align: middle;
+                box-sizing: border-box;
+                border: none;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--ux-white);
+              background: var(--ux-black);
+              gap: 1em;
+              flex-direction: row;
+              padding: 4em;
+            "
+          >
+            <a rel="/login/register" style="cursor: pointer">服务条款</a
+            ><a rel="/login/register" style="cursor: pointer">隐私政策</a
+            ><label
+              style="
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                box-sizing: border-box;
+                opacity: 1;
+                background-color: transparent;
+                color: var(--ux-white);
+              "
+              >English<select
+                style="
+                  background: transparent;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  outline: none;
+                  appearance: none;
+                  opacity: 0;
+                "
+              >
+                <option value="en">English</option>
+                <option value="zh">简体中文</option>
+                <option value="cht">繁体中文</option>
+                <option value="kor">한국인</option>
+                <option value="fra">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="jp">日本</option>
+                <option value="spa">Española</option>
+                <option value="ru">русский</option>
+                <option value="it">Italia</option>
+              </select>
+              <div style="width: 1.25em; height: 1.25em; margin-left: 0.25em"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/index.tsx" type="module"></script>
+    <script>
+      (function (w, d, c) {
+        w.ChatraID = "3tNimCZuQQLAhNR2S";
+        const s = d.createElement("script");
+        w[c] =
+          w[c] ||
+          function () {
+            (w[c].q = w[c].q || []).push(arguments);
+          };
+        s.async = true;
+        s.src = "https://call.chatra.io/chatra.js";
+        if (d.head) d.head.appendChild(s);
+      })(window, document, "Chatra");
+    </script>
+    <!-- <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?a5f91248c023e25f497fc0d66231d886";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> -->
+  </body>
+</html>

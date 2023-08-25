@@ -1,9 +1,7 @@
-name: testflowy_release
+name: deploy
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
 env:

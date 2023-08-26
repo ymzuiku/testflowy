@@ -7,12 +7,12 @@ import {
   RiUserUserSettingsLine,
 } from "solid-icons/ri";
 import { Component, For, Show } from "solid-js";
-import { createMediaQuerySm } from "solid-ux/createMediaQuerySm";
 import { UxButton } from "solid-ux/UxButton";
 import { UxI18nPick } from "solid-ux/UxI18nPick";
 import { UxSolidIcon } from "solid-ux/UxSolidIcon";
 import { UxSvg } from "solid-ux/UxSvg";
 import { UxWaveLine } from "solid-ux/UxWaveLine";
+import { createMediaQuerySm } from "solid-ux/createMediaQuerySm";
 import { routers } from "..";
 import { i18n } from "../../i18n";
 import { css } from "../css";
@@ -121,9 +121,26 @@ const Welcome: Component<{ stackShow: boolean }> = (p) => {
               gap: "2.5em",
             }}
           >
+            <div
+              style={{
+                background: "transparent",
+                cursor: "pointer",
+                display: "flex",
+                "flex-direction": "row",
+                "align-items": "center",
+                "justify-content": "center",
+              }}
+              onclick={() => {
+                if (typeof window !== "undefined") {
+                  window.open("https://github.com/ymzuiku/testflowy");
+                }
+              }}
+            >
+              <img style={{ width: "2em", height: "2em" }} src="/github.svg" />
+            </div>
             <UxI18nPick
               style={{
-                "font-size": "var(--ux-text-lg)",
+                "font-size": sm() ? "var(--ux-text-lg)" : "var(--ux-text-sm)",
               }}
             />
             <a

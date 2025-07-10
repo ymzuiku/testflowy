@@ -1,8 +1,8 @@
 # Why use Testflow?
 
-[Web Site](https://testflowy.com/)
+[Web Site](https://test.amarkdown.com/)
 
-[Document](https://testflowy.com/#/welcome/doc)
+[Document](https://test.amarkdown.com/#/welcome/doc)
 
 ## What is Testflow?
 
